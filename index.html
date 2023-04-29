@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><img src="img/notification.png" alt="notification image"></li>
+                <li><img src="img/inbox.png" alt="inbox image"></li>
+                <li><img src="img/video.png" alt="video image"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="img/search.png" alt="search image">
+                <input type="text" placeholder="Search SocialBook">
+            </div>
+            <div class="user-profile online" onclick="settingsMenuToggle()">
+                <img src="img/profile-pic.png" alt="profile pic image" id="profile-pic">
+            </div>
+        </div>
+
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="img/profile-pic.png">
+                    <div>
+                        <p>John Nicholsan</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="img/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve our design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="img/setting.png" class="setting-icon">
+                    <a href="#">Settings & Privacy <img src="img/arrow.png"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/help.png" class="setting-icon">
+                    <a href="#">Help & Support <img src="img/arrow.png"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/display.png" class="setting-icon">
+                    <a href="#">Display & Accessiility <img src="img/arrow.png"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/logout.png" class="setting-icon">
+                    <a href="#">Log out <img src="img/arrow.png"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- ------left sidebar----- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png" alt="news icon"> Latest News</a>
+                <a href="#"><img src="img/friends.png" alt="friends icon"> Friends</a>
+                <a href="#"><img src="img/group.png" alt="group icon"> Group</a>
+                <a href="#"><img src="img/marketplace.png" alt="marketplace icon"> Market place</a>
+                <a href="#"><img src="img/watch.png" alt="watch icon"> Watch Video</a>
+                <a href="#"> <img src="img/arrow-down.png" alt="arrow down"> See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="img/shortcut-1.png"> Web Developers</a>
+                <a href="#"><img src="img/shortcut-2.png"> Web Design Course</a>
+                <a href="#"><img src="img/shortcut-3.png"> Full Stack Developers</a>
+                <a href=" #"><img src="img/shortcut-4.png"> Website Experts</a>
+            </div>
+        </div>
+        <!-- ------main content----- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="img/upload.png">
+                    <p>Post stories</p>
+                </div>
+                <div class="story story2">
+                    <img src="img/member-1.png">
+                    <p>Post stories</p>
+                </div>
+                <div class="story story3">
+                    <img src="img/member-2.png">
+                    <p>Post stories</p>
+                </div>
+                <div class="story story4">
+                    <img src="img/member-3.png">
+                    <p>Post stories</p>
+                </div>
+                <div class="story story5">
+                    <img src="img/member-4.png">
+                    <p>Post stories</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <img src="img/profile-pic.png">
+                <input type="text" placeholder="What's on your mind?">
+            </div>
+            <div class="media-options">
+                <a href="#"><img src="img/live-video.png">Live video</a>
+                <a href="#"><img src="img/gallery.png">Photo/Video</a>
+                <a href="#"><img src="img/feeling.png">Feeling/activity</a>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="post-user-profile">
+                        <img src="img/member-8.png">
+                        <div>
+                            <p>Shreya basu</p>
+                            <span>June 21 2020, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">We are back to winning ways after registering a 23-run win against Delhi..❤️🔥👊
+                    #viratkohli #kingkohli #anushkasharma #royalchallengersbangalore #RCBvsDC #vkfbd #ipl #ipl2023
+                </p>
+                <img src="img/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png"> 189</div>
+                        <div><img src="img/comments.png"> 87</div>
+                        <div> <img src="img/share.png"> 65</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="post-user-profile">
+                        <img src="img/member-8.png">
+                        <div>
+                            <p>Shreya basu</p>
+                            <span>June 21 2020, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">We are back to winning ways after registering a 23-run win against Delhi..❤️🔥👊
+                    #viratkohli #kingkohli #anushkasharma #royalchallengersbangalore #RCBvsDC #vkfbd #ipl #ipl2023
+                </p>
+                <img src="img/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like.png"> 768</div>
+                        <div><img src="img/comments.png"> 234</div>
+                        <div> <img src="img/share.png"> 55</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="post-user-profile">
+                        <img src="img/member-8.png">
+                        <div>
+                            <p>Shreya basu</p>
+                            <span>June 21 2020, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">Build the most popular cybersecurity skills hands-on with premium practical videos,
+                    lab demos, and assessments. Our courses are co-developed with leading industry experts to help
+                    ensure that you are industry-ready. Get started now!
+                    <a href="#"> #cybersecuritycourse</a> <a href="#">#cybersecuritycourses</a> <a
+                        href="#">#learncybersecurity</a> <a href="#">#specialoffer</a> <a href="#">#offeralert</a>
+                    <a href="#">#limitedtimeoffer</a> <a href="#">#codered</a> <a href="#">#eccouncil</a>
+                </p>
+                <img src="img/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png"> 987</div>
+                        <div><img src="img/comments.png"> 455</div>
+                        <div> <img src="img/share.png"> 144</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="post-user-profile">
+                        <img src="img/member-8.png">
+                        <div>
+                            <p>Shreya basu</p>
+                            <span>June 21 2020, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <p class="post-text">We are back to winning ways after registering a 23-run win against Delhi..❤️🔥👊
+                    #viratkohli #kingkohli #anushkasharma #royalchallengersbangalore #RCBvsDC #vkfbd #ipl #ipl2023
+                </p>
+                <img src="img/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like.png"> 298</div>
+                        <div><img src="img/comments.png"> 112</div>
+                        <div> <img src="img/share.png"> 23</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png">
+                        <i class="fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="load-more-btn">Load more</button>
+        </div>
+        <!-- ------right sidebar----- -->
+        <div class="right-sidebar">
+            <div class="sidebartitle">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="events">
+                <div class="left-event-col">
+                    <h3>18</h3>
+                    <span>May</span>
+                </div>
+                <div class="right-event-col">
+                    <h4>Web Scrapping using Python</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Wilson Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="events">
+                <div class="left-event-col">
+                    <h3>21</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event-col">
+                    <h4>Java Web Development</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Ravindra Bhavan</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="sidebartitle">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="img/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebartitle">
+                <h4>Conversation</h4>
+                <a href="#">hide chats</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-1.png">
+                </div>
+                <p>Pravin KK</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-2.png">
+                </div>
+                <p>Rohan Shetty</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="img/member-3.png">
+                </div>
+                <p>Omkar Shirodkar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2020 Company - All Rights Reserved.
+    </div>
+</body>
+
+</html>
